@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Project</title>
+    <link rel="shortcut icon" href="https://nomorsiapa.com/images/v/th/id/OIP.b8Lv624N_31ACx9Cl0WAxwHaHa?w=205&h=205&c=7&r=0&o=5&pid=1.7" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Clothes</title>
+    <style>
+      .images-full {
+        width: 100%;
+  
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -48,7 +56,7 @@
     <!-- landing page -->
     <section class="hero" id="1">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h1>Go faster, go stronger, never stop</h1>
           <div class="tombol">
             <input class="button" type="button" value="Shop now" />
@@ -59,7 +67,7 @@
 
     <section class="hero-img">
       <div class="container">
-        <div class="img-item">
+        <div class="img-item" data-aos="fade-up"  data-aos-offset="200">
           <img src="img/orang bawa sepatu .jpg" alt="" />
         </div>
       </div>
@@ -73,38 +81,42 @@
             <p><a href="#" class="txt">Discover our products </a></p>
             <p class="text-contents"><strong>Product</strong></p>
           </div>
-          <div class="image-brands">
-              <div class="brands">
-                  <img src="img/sepatu.jpg" width="300" height="400">
-              </div>
-              <div class="tombol">
-                  <input class="button" type="button" value="Shop now">
-              </div>
+          <div class="images-all">
+            <div class="image-brands" data-aos="fade-up">
+                <div class="brands">
+                    <img src="img/sepatu.jpg">
+                </div>
+                <div class="tombol">
+                    <input class="button" type="button" value="Shop now">
+                </div>
+            </div>
+            <div class="image-brands2 fa" data-aos="fade-up">
+                <div class="brands">
+                    <img src="img/andres-jasso-PqbL_mxmaUE-unsplash.jpg">
+                </div>
+                <div class="tombol">
+                    <input class="button" type="button" value="Shop now ">
+                </div>
+            </div>
+            <div class="image-brands3 fa" data-aos="fade-up">
+                <div class="brands">
+                    <img src="img/sepatu.jpg">
+                </div>
+                <div class="tombol">
+                    <input class="button" type="button" value="Shop now">
+                </div>
+            </div>
           </div>
-          <div class="image-brands">
-              <div class="brands">
-                  <img src="img/andres-jasso-PqbL_mxmaUE-unsplash.jpg" width="300" height="400">
-              </div>
-              <div class="tombol">
-                  <input class="button" type="button" value="Shop now ">
-              </div>
-          </div>
-          <div class="image-brands">
-              <div class="brands">
-                  <img src="img/sepatu.jpg" width="300" height="400">
-              </div>
-              <div class="tombol">
-                  <input class="button" type="button" value="Shop now">
-              </div>
-          </div>
-          <div class="img-full">
-              <img src="img/1.jpg" style="width: 100%">
-            <p class="txt_img">Give your feet the
-              beauty treatment that
-              only brand new Roston
-              can give.</p>
-            <p><a href="#" class="txt_product">Discover our products</a></p>
-            <p><a href="#" class="txt_2">Discover our stories </a></p>
+          <div class="images-full">
+            <div class="img-full">
+                <img src="img/1.jpg" style="width: 100%">
+              <p class="txt_img">Give your feet the
+                beauty treatment that
+                only brand new Roston
+                can give.</p>
+              <p><a href="#" class="txt_product">Discover our products</a></p>
+              <p><a href="#" class="txt_2">Discover our stories </a></p>
+            </div>
           </div>
           <div class="teks-judul">
             <p class="text-contents"><strong>Stories</strong></p>
@@ -150,5 +162,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true
+      });
+    </script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+* {
+  box-sizing:border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +10,6 @@ body {
   margin: 0;
   background: rgb(255, 255, 255);
   font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
 }
 
 /* navbar */
@@ -89,6 +92,19 @@ section {
   width: 65%;
 }
 
+@media only screen and (max-width: 764px) {
+  .container {
+    overflow: hidden;
+    padding: 0 1rem;
+    background: rgb(255, 255, 255);
+  }
+  
+  .container .text {
+    width: 80%;
+  }
+}
+
+
 .container .text h1 {
   font-size: 75px;
   letter-spacing: 0.5px;
@@ -108,23 +124,18 @@ section {
 }
 
 .container .text .button:hover {
-  background: white;
-  color: black;
-  border: 2px solid black;
+  background: rgb(31, 31, 31);
 }
 /* akhir landing page */
 
 /* Hero img */
-
 .container .img-item img {
   width: 100%;
 }
 /* akhir hero img */
 
 /* content */
-.image{
-  padding: 50px 90px;
-}
+
 .text-contents{
   padding: 5px 90px;
   font-family: 'Montserrat', sans-serif;
@@ -136,22 +147,37 @@ section {
 }
 
 .image-brands{
-  padding: 5px 90px;
-  float: left;
-  width: 17%;
+  grid-area: 1 / 1 / 3 / 2;
+
+}
+.image-brands2{
+  grid-area: 1 / 2 / 3 / 3;
+
+}
+.image-brands3{
+  grid-area: 1 / 3 / 3 / 4;
 
 }
 .brands{
+  height: 500px;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .brands img {
-  transition: transform 1s, filter 1.1s ease-in-out;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.2s, filter 1.1s ease-in-out;
   transform-origin: center center;
 }
 
 .brands img:hover {
   transform: scale(1.08);
+}
+
+.tombol {
+  width: max-content;
 }
 
 .image-brands .button {
@@ -172,8 +198,44 @@ section {
   color: black;
   border: 2px solid black;
 }
+.image-brands2 .button {
+  margin-top: 25px;
+  padding: 12px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgb(33, 36, 51);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.image-brands3 .button:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+.image-brands3 .button {
+  margin-top: 25px;
+  padding: 12px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgb(33, 36, 51);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.image-brands2 .button:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
 .img-full{
-  margin-top: 530px;
   padding: 0px 90px;
   position: relative;
 	z-index: 1;
@@ -431,3 +493,12 @@ footer {
   }
 }
 
+.images-all {
+  width: 100%;
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 27px;
+  grid-row-gap: 0px;
+}
